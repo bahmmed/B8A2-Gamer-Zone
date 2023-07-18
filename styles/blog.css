@@ -6,6 +6,17 @@ body {
 .text-color-white{
     color: #FFF;
 }
+.text-color-perple{
+    color: #8758F1;
+}
+
+.text-color-gray{
+    color: #534C64;
+}
+.text-size{
+    font-size: ;
+}
+
 .btn-primary {
     width: 96px;
     height: 33px;
@@ -56,5 +67,14 @@ nav li {
 .banner img{
     width: 400px;
     height: 250px;
+    align-items: right;
+}
+.we-are-gamer{
+    display: flex;
+
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    justify-content: space-between;
+}
+.we-are-gamer-desc{
     align-items: right;
 }
