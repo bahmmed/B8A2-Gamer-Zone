@@ -11,7 +11,7 @@ body {
     color: #FFF;
 }
 
-.text-color-perple {
+.text-color-perple. {
     color: #8758F1;
 }
 
@@ -62,6 +62,7 @@ nav {
 nav>.logo {
     display: flex;
     align-items: center;
+    margin-left: 150px;
 }
 
 nav ul {
@@ -72,9 +73,32 @@ nav ul {
 
 nav li {
     list-style: none;
+    text-decoration: none;
+    margin-right: 40px;
 
 }
 
+nav a {
+   
+    text-decoration: none;    
+}
+.list-icon{
+    display: flex;
+    margin-right: 100px;
+    width: 200px;
+    height: 30px;
+    background: rgba(11, 2, 35, 0.10);
+    border: 0px;
+    border-radius: 8px;
+    
+}
+
+.list-icon img{
+    margin-right: 5px;
+    border: 0px;
+    border-radius: 8px;
+    
+}
 .banner {
     display: flex;
     justify-content: space-between;
@@ -86,10 +110,17 @@ nav li {
     background-image: url(../images/Group\ 14.png);
 }
 
+
+.banner-desc{
+    margin-left: 150px;
+    max-height: 250px;
+}    
+
 .banner img {
-    width: 400px;
+    width: 300px;
     height: 250px;
     align-items: right;
+    margin-right: 90px;
 }
 
 .we-are-gamer {
@@ -203,4 +234,27 @@ nav li {
 
 .footer-copy-right {
     align-items: center;
+}
+
+
+/* Responsive */
+/* for Mobile Device */
+@media screen and (max-width:576px){
+    nav{
+        flex-direction: column;
+    }
+    nav li {     
+        padding: 0px;   
+        margin-right: 10px;    
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .we-are-gamer{
+        flex-direction: column;
+    }
+    .banner .we-are-gamer-img{
+        width: 10px;
+        /* max-height: 50px; */
+    }
 }
