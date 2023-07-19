@@ -11,8 +11,10 @@ body {
     color: #FFF;
 }
 
-.text-color-perple. {
+.text-color-perple {
     color: #8758F1;
+    #F948B2,
+    #8758F1
 }
 
 .text-color-gray {
@@ -169,23 +171,24 @@ nav a {
     justify-content: space-between;
 }
 
-.we-are-gamer img{
-   max-width: 900px;
-    max-height:400px;
-}    
-.we-are-gamer-desc{
+.we-are-gamer img {
+    max-width: 900px;
+    max-height: 400px;
+}
+
+.we-are-gamer-desc {
     margin-right: 100px;
 }
 
-.we-are-gamer-desc h3{
+.we-are-gamer-desc h3 {
     text-align: right;
 }
 
-.we-are-gamer-desc p{
+.we-are-gamer-desc p {
     text-align: right;
 }
 
-.gamer-btn{
+.gamer-btn {
     margin-left: 335px;
     align-items: end;
 }
@@ -195,6 +198,10 @@ nav a {
     display: flex;
     justify-content: space-around;
 
+}
+
+.cart-container h3 {
+    text-align: center;
 }
 
 .cart {
@@ -214,21 +221,76 @@ nav a {
     font-size: 16px;
 }
 
+
 .play-instantly {
-    display: flex;
-    justify-content: space-between;
-}
-
-.play-instantly img {
-    display: flex;
-
-}
-
-.play-games-online {
+    padding: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+.play-instantly-desc {
+    margin: 100px 200px;
+}
+
+.play-instantly-desc h3 {
+    text-align: right;
+
+}
+
+.play-instantly-desc p {
+    text-align: right;
+
+}
+
+.play-instantly .polo-man {
+    width: 350px;
+    height: 400px;
+    margin-left: 90px;
+
+}
+
+.play-instantly .pichchi-img {
+    width: 220px;
+    height: 220px;
+    position: relative;
+    bottom: 100px;
+}
+
+
+.play-games-online {
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.play-games-online .curton-girl{
+    width: 350px;
+    height: 400px;
+    /* margin-left: 90px; */
+}
+
+.play-games-online .curton-pichchi{
+    margin-left: 260px;
+    width: 220px;
+    height: 220px;
+    position: relative;
+    bottom: 100px;
+}
+
+.play-games-online-desc {
+    margin: 100px 200px;
+}
+
+.play-games-online-desc h3 {
+    text-align: left;
+}
+
+.play-games-online-desc p {
+    text-align: left;
+}
+
 
 .career {
 
@@ -237,6 +299,21 @@ nav a {
     background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
     justify-content: space-betweenD;
 
+}
+.career-desc{
+    padding: 60px;
+}
+
+.left-right-desc{
+    display: flex;
+    justify-content: space-between;
+}
+.career-desc-left p{
+    text-align: left;
+}
+
+.career-desc-right p{
+    text-align: right;
 }
 
 .career img {
