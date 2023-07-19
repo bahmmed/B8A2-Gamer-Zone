@@ -22,8 +22,13 @@ body {
 
 }
 
-.text-size {
-    font-size: 14px;
+.text-size_14 {
+    font-size: 1rem;
+}
+
+
+.text-size_18 {
+    font-size: 1.2rem;
 }
 
 .btn-primary {
@@ -43,10 +48,12 @@ body {
 }
 
 .btn-tertiary {
-    width: 96px;
+    width: 170px;
     height: 33px;
     border: 0px;
-    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    /* background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%)); */
+    border-radius: 48px;
+    background: #FFF;
 }
 
 .logo-size {
@@ -265,13 +272,13 @@ nav a {
     align-items: center;
 }
 
-.play-games-online .curton-girl{
+.play-games-online .curton-girl {
     width: 350px;
     height: 400px;
     /* margin-left: 90px; */
 }
 
-.play-games-online .curton-pichchi{
+.play-games-online .curton-pichchi {
     margin-left: 260px;
     width: 220px;
     height: 220px;
@@ -297,22 +304,24 @@ nav a {
     height: 500px;
     display: flex;
     background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
-    justify-content: space-betweenD;
+    justify-content: space-between;
 
 }
-.career-desc{
+
+.career-desc {
     padding: 60px;
 }
 
-.left-right-desc{
+.left-right-desc {
     display: flex;
     justify-content: space-between;
 }
-.career-desc-left p{
+
+.career-desc-left p {
     text-align: left;
 }
 
-.career-desc-right p{
+.career-desc-right p {
     text-align: right;
 }
 
@@ -321,31 +330,55 @@ nav a {
     max-height: 500px;
 }
 
+.left-right-desc .left_list {
+    margin-left: 0px;
+    list-style: none;
+    text-align: left;
+}
+
+
+.left-right-desc .right_list {
+    list-style: none;
+    text-align: right;
+}
+
 .game-btn {
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
 
 .cart-btn {
-    border:
+    border:1px solid coral;
+    width: 200px;
+    border-radius: 50px;
 }
 
 .gamer-footer {
     padding: 100px;
     background-color: #0B0223;
+    text-align: center;
 }
 
 .footer-logo {
     display: flex;
     align-items: center;
 }
+.footer-logo img{
+    align-items: center;
+}
+
+.footer-logo h3{
+    text-align: center;
+}
 
 .footer-sms {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .footer-icon {
-    display: inline-flex;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .footer-terms {
@@ -354,7 +387,7 @@ nav a {
 }
 
 .footer-copy-right {
-    align-items: center;
+    text-align: center;
 }
 
 
