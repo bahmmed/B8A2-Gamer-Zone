@@ -27,12 +27,20 @@ body {
 }
 
 
+.text-size_10 {
+    font-size: .8rem;
+}
+
 .text-size_18 {
     font-size: 1.2rem;
 }
 
+.text-weight-700 {
+    font-weight: 700;
+}
+
 .btn-primary {
-    width: 96px;
+    width: 150px;
     height: 33px;
     border: 0px;
     border-radius: 48px;
@@ -40,7 +48,7 @@ body {
 }
 
 .btn-secondary {
-    width: 96px;
+    width: 150px;
     height: 33px;
     border: 0px;
     border-radius: 48px;
@@ -51,7 +59,6 @@ body {
     width: 170px;
     height: 33px;
     border: 0px;
-    /* background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%)); */
     border-radius: 48px;
     background: #FFF;
 }
@@ -60,54 +67,41 @@ body {
     padding-right: 5px;
     width: 30px;
     height: 20px;
-
 }
 
 /* nav styles info */
-nav {
+.nav-container {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-nav>.logo {
+.nav-container>.logo {
     display: flex;
+    width: 50%;
+    object-fit: cover;
     align-items: center;
     margin-left: 150px;
 }
 
-nav ul {
+.nav-container .nav-list {
     display: flex;
-    justify-content: space-evenly;
-
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
 }
 
-nav li {
-    list-style: none;
-    text-decoration: none;
-    margin-right: 40px;
-
-}
-
-nav a {
+.nav-list a {
 
     text-decoration: none;
 }
 
-.list-icon {
-    display: flex;
-    margin-right: 100px;
-    width: 200px;
-    height: 30px;
+.follow-btn {
+    padding: 10px 30px 10px 1px;
+    object-fit: cover;
+    border-radius: 8px;    
     background: rgba(11, 2, 35, 0.10);
-    border: 0px;
-    border-radius: 8px;
-
-}
-
-.list-icon img {
-    margin-right: 5px;
-    border: 0px;
-    border-radius: 8px;
 
 }
 
@@ -117,11 +111,10 @@ nav a {
 }
 
 .banner-bg-img {
-    width: 801px;
+    width: 901px;
     height: 400px;
     background-image: url(../images/Group\ 14.png);
 }
-
 
 .banner-desc {
     margin-left: 150px;
@@ -152,28 +145,25 @@ nav a {
     gap: 5px;
 }
 
-.img-1 {
-    list-style: none;
-    text-decoration: none;
-}
-
 
 .img-1 img {
     width: 15px;
     height: 15px;
 }
 
-.img-1 a {
-    text-decoration: none;
-    align-items: start;
-    margin-left: 0px;
+
+.side-icon {
+    display: flex;
+    align-items: center;
 }
 
+.side-icon h3 {
+    margin-left: -80px;
+}
 
 .we-are-gamer {
     display: flex;
     max-height: 400px;
-
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
     justify-content: space-between;
 }
@@ -200,32 +190,45 @@ nav a {
     align-items: end;
 }
 
-.cart-container {
-    padding: 100px;
-    display: flex;
-    justify-content: space-around;
-
-}
-
-.cart-container h3 {
+.card-title {
     text-align: center;
 }
 
-.cart {
-    width: 250px;
+.all-card {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1120px;
     height: 300px;
     text-align: left;
     font-size: 20px;
     ;
 }
 
-.cart img {
+.card img {
     max-width: 250px;
     max-height: 300px;
 }
 
-.cart p {
-    font-size: 16px;
+.card p {
+    max-width: 250px;
+}
+
+.card .play-card {
+    padding: 0px;
+    background-color: #FFF;
+    max-width: 20px;
+    max-height: 20px;
+    position: relative;
+    bottom: 125px;
+    left: -140px;
+}
+
+.card .play-now {
+    color: #FFF;
+    position: relative;
+    bottom: 150px;
+    right: -70px;
+    Z font-weight: 700;
 }
 
 
@@ -298,6 +301,34 @@ nav a {
     text-align: left;
 }
 
+.game-btn {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+
+.all-game-btn{
+    align-items: center;
+    padding: 100px 10px 100px 10px;
+    row-gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(5,2fr);
+    /* grid-template-columns: repeat(auto-fit minmax(max-content 1fr)) */
+}
+.cart-btn {
+    display: flex;
+    justify-content: center;
+    border: 1px solid coral;
+    width: 220px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+
+
+.cart-btn:hover {
+    border: 2px solid #0B0223;
+}
 
 .career {
 
@@ -313,106 +344,78 @@ nav a {
 }
 
 .left-right-desc {
+    /* width: 430px; */
     display: flex;
     justify-content: space-between;
 }
 
-.career-desc-left p {
-    text-align: left;
-}
-
-.career-desc-right p {
-    text-align: right;
-}
-
-.career img {
-    width: 700px;
-    max-height: 500px;
-}
 
 .left-right-desc .left_list {
-    margin-left: 0px;
+    /* width: 200px; */
+    margin-left: -40px;
     list-style: none;
     text-align: left;
+    text-decoration: none;
+
 }
 
 
 .left-right-desc .right_list {
+    /* width: 200px; */
     list-style: none;
     text-align: right;
 }
 
-.game-btn {
-    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+.career img {
+    width: 620px;
+    max-height: 500px;
 }
 
-.cart-btn {
-    border:1px solid coral;
-    width: 200px;
-    border-radius: 50px;
-}
 
 .gamer-footer {
     padding: 100px;
     background-color: #0B0223;
-    text-align: center;
+    align-items: center;
 }
 
 .footer-logo {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
-.footer-logo img{
+
+.footer-logo img {
     align-items: center;
 }
 
-.footer-logo h3{
+.footer-logo h3 {
     text-align: center;
 }
 
 .footer-sms {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
     align-items: center;
-    justify-content: space-evenly;
+    
 }
 
 .footer-icon {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
 }
 
+.ficon img {
+    background-color: #FFF;
+}
+
+
+
 .footer-terms {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }
 
 .footer-copy-right {
     text-align: center;
 }
 
-
-/* Responsive */
-/* for Mobile Device */
-@media screen and (max-width:576px) {
-    nav {
-        flex-direction: column;
-    }
-
-    nav li {
-        padding: 0px;
-        margin-right: 10px;
-    }
-
-    .banner {
-        flex-direction: column;
-    }
-
-    .we-are-gamer {
-        flex-direction: column;
-    }
-
-    .banner .we-are-gamer-img {
-        width: 10px;
-        /* max-height: 50px; */
-    }
-}
